@@ -12,3 +12,4 @@ A hands-on collection of flawed code samples and structured debugging scenarios 
   - [`bug5.c`](./bug_snippets/bug5.c): Semicolon syntax error in string reversal (C).
   - [`bug6.py`](./bug_snippets/bug6.py): Dictionary size mutation during iteration runtime error (Python).
 - [`bug_descriptions.md`](./bug_descriptions.md): Structured Markdown documentation describing each bug's intended behavior, issue type, and technical failure mechanics.
+- [`ai_debug_log.md`](./bug_snippets/ai_debug_log.md): AI-assisted debugging interaction logs capturing root-cause diagnosis, suggested fixes, alternative approaches evaluated, and verification results.
