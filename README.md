@@ -8,3 +8,4 @@ This repository contains projects and practical exercises developed for the Holb
 | Directory | Description |
 | :--- | :--- |
 | [`prompt_patterns_library`](./prompt_patterns_library) | Reusable prompt patterns, use cases, templates, and evaluation benchmarks for AI-assisted engineering workflows. |
+| [`prompting_debug_assistant`](./prompting_debug_assistant) | Flawed code snippets, debugging workflows, and structured root-cause analysis with AI assistants. |
