@@ -21,3 +21,4 @@ A hands-on collection of flawed code samples and structured debugging scenarios 
   - [`bug5_fixed.c`](./bug_fixes/bug5_fixed.c): Syntax-corrected in-place string reversal.
   - [`bug6_fixed.py`](./bug_fixes/bug6_fixed.py): Safe session purging without in-iteration dictionary mutation.
 - [`fix_validation.md`](./bug_fixes/fix_validation.md): Detailed test execution logs, inputs, expected outputs, and actual outcomes for each fix.
+- [`bug_reports.md`](./bug_reports.md): Formal structured bug reports documenting summary, root cause, resolution (AI suggestion + manual edits), and lessons learned for each defect.
