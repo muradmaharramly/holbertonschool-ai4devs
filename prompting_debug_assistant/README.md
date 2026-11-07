@@ -13,3 +13,11 @@ A hands-on collection of flawed code samples and structured debugging scenarios 
   - [`bug6.py`](./bug_snippets/bug6.py): Dictionary size mutation during iteration runtime error (Python).
 - [`bug_descriptions.md`](./bug_descriptions.md): Structured Markdown documentation describing each bug's intended behavior, issue type, and technical failure mechanics.
 - [`ai_debug_log.md`](./bug_snippets/ai_debug_log.md): AI-assisted debugging interaction logs capturing root-cause diagnosis, suggested fixes, alternative approaches evaluated, and verification results.
+- [`bug_fixes/`](./bug_fixes/): Corrected, verified source files resolving each defect.
+  - [`bug1_fixed.py`](./bug_fixes/bug1_fixed.py): Corrected moving average calculation.
+  - [`bug2_fixed.js`](./bug_fixes/bug2_fixed.js): Null-safe financial transaction processing.
+  - [`bug3_fixed.py`](./bug_fixes/bug3_fixed.py): Isolated role group assignment using sentinel parameter.
+  - [`bug4_fixed.js`](./bug_fixes/bug4_fixed.js): Numeric sorting and type-safe revenue aggregation.
+  - [`bug5_fixed.c`](./bug_fixes/bug5_fixed.c): Syntax-corrected in-place string reversal.
+  - [`bug6_fixed.py`](./bug_fixes/bug6_fixed.py): Safe session purging without in-iteration dictionary mutation.
+- [`fix_validation.md`](./bug_fixes/fix_validation.md): Detailed test execution logs, inputs, expected outputs, and actual outcomes for each fix.
