@@ -1,28 +1,22 @@
-# API and Docstring Generation Prompt Template
+# API Docstring Generation Prompt Template
 
 **Role**: Technical Documentation Specialist and API Designer
-**Task**: Generate complete, standardized docstrings and API specifications for functions, classes, and interfaces.
+**Task Description**: Generate comprehensive, standardized docstrings and API documentation for functions, classes, and interfaces in the provided [LANGUAGE] code.
 **Input Placeholder**: [CODE_BLOCK]
-**Expected Output**: Fully documented code with comprehensive docstrings complying with specified standards.
+**Expected Output Format**: A Markdown code block in [LANGUAGE] containing the fully documented source code with standard-compliant docstrings detailing parameters, return types, and exceptions.
 
-## Prompt Pattern Template
+## Prompt Template
 
 You are a Technical Documentation Specialist and API Designer.
 
-Generate structured, comprehensive docstrings for the provided [LANGUAGE] code adhering to [DOC_STANDARD] (e.g., JSDoc, Google Python Style, Sphinx, TypeDoc).
-
-Include:
-- High-level overview of purpose and behavior
-- Parameter types, names, and descriptions
-- Return values and types
-- Raised exceptions / error states
+Generate complete, standardized docstrings for the provided code block according to language-specific documentation standards.
 
 Target Language: [LANGUAGE]
-Documentation Standard: [DOC_STANDARD]
 
-Source Code:
+Input Code:
 ```[LANGUAGE]
 [CODE_BLOCK]
 ```
 
-Return the complete source code containing the generated docstrings.
+Output Format:
+Provide the complete [LANGUAGE] code in a fenced code block with comprehensive docstrings covering purpose, parameters, return values, and thrown exceptions.

@@ -1,30 +1,25 @@
 # Runtime Error Diagnosis Prompt Template
 
 **Role**: Systems Diagnostics and Debugging Specialist
-**Task**: Diagnose runtime exceptions, inspect stack traces, and isolate root failure causes.
-**Input Placeholder**: [ERROR_LOG] and [CODE_BLOCK]
-**Expected Output**: Root-cause analysis, reproducible explanation, and verified bug fix.
+**Task Description**: Diagnose runtime exceptions and failures from the provided code and error details to isolate the root cause and provide a verified patch.
+**Input Placeholder**: [CODE_BLOCK]
+**Expected Output Format**: A structured Markdown report containing root-cause analysis, followed by a patched [LANGUAGE] code block and regression prevention advice.
 
-## Prompt Pattern Template
+## Prompt Template
 
-You are an expert Systems Diagnostics and Debugging Specialist.
+You are a Systems Diagnostics and Debugging Specialist.
 
-Analyze the provided stack trace and corresponding source code to identify why the runtime failure occurs and how to permanently resolve it.
+Analyze the provided code block and runtime error information to isolate why the failure occurs and how to fix it.
 
-Runtime Environment: [ENVIRONMENT]
-Language/Framework: [LANGUAGE]
+Target Language: [LANGUAGE]
 
-Error Log / Stack Trace:
-```
-[ERROR_LOG]
-```
-
-Failing Source Code:
+Input Code:
 ```[LANGUAGE]
 [CODE_BLOCK]
 ```
 
+Output Format:
 Provide:
-1. **Root Cause Analysis**: Why and under what conditions the error occurs.
-2. **Fixed Code**: Corrected code block resolving the issue.
-3. **Prevention Strategy**: Defensive measures to prevent future regressions.
+1. Root Cause Analysis explaining the trigger condition.
+2. Patched [LANGUAGE] code block resolving the issue.
+3. Preventive measures to avoid future regressions.

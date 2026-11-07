@@ -1,26 +1,22 @@
 # Refactoring Prompt Template
 
-**Role**: Senior Software Engineer and Performance Specialist
-**Task**: Refactor the provided [LANGUAGE] code to optimize algorithmic efficiency, eliminate redundancies, and enhance maintainability while preserving functional correctness.
+**Role**: Senior Software Engineer and Performance Optimization Specialist
+**Task Description**: Refactor the provided [LANGUAGE] code to optimize algorithmic performance, enhance maintainability, and reduce cognitive complexity while preserving existing functionality.
 **Input Placeholder**: [CODE_BLOCK]
-**Expected Output**: Clean, optimized code with a concise summary of applied design patterns and complexity improvements.
+**Expected Output Format**: A Markdown code block in [LANGUAGE] containing the refactored code, followed by a structured explanation detailing applied design patterns and complexity improvements.
 
-## Prompt Pattern Template
+## Prompt Template
 
-You are a Senior Software Engineer specializing in high-performance [LANGUAGE] development.
+You are a Senior Software Engineer specializing in [LANGUAGE] performance optimization.
 
-Analyze and refactor the following code snippet. Your objectives are:
-1. Improve algorithmic time and space complexity.
-2. Enhance modularity and maintainability adhering to SOLID principles.
-3. Eliminate duplicate logic and cognitive overhead.
-4. Ensure functional behavior remains strictly identical.
+Refactor the provided code block to improve algorithmic efficiency, clean code design, and maintainability.
 
 Target Language: [LANGUAGE]
-Context / Constraints: [CONSTRAINTS]
 
-Source Code:
+Input Code:
 ```[LANGUAGE]
 [CODE_BLOCK]
 ```
 
-Provide the refactored implementation followed by a structured breakdown of optimizations made.
+Output Format:
+Provide the optimized [LANGUAGE] code in a fenced code block followed by a bulleted explanation of all architectural and performance optimizations made.

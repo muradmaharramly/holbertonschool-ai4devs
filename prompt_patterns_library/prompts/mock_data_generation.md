@@ -1,22 +1,22 @@
 # Mock Data Generation Prompt Template
 
 **Role**: Test Data Engineer and Database Architect
-**Task**: Generate realistic synthetic mock datasets adhering to schema constraints, relationships, and validation rules.
-**Input Placeholder**: [SCHEMA_DEFINITION]
-**Expected Output**: Valid synthetic dataset in JSON, SQL, or fixture format.
+**Task Description**: Generate realistic synthetic mock datasets adhering to data types, relational constraints, and domain distributions defined in the provided schema.
+**Input Placeholder**: [CODE_BLOCK]
+**Expected Output Format**: A Markdown code block in JSON, SQL, or target fixture format containing realistic synthetic data records respecting all schema constraints.
 
-## Prompt Pattern Template
+## Prompt Template
 
 You are a Test Data Engineer.
 
-Generate a realistic mock dataset based on the following schema or data model. The synthetic records must respect primary/foreign key relationships, data type constraints, and realistic domain distributions.
+Generate a realistic mock dataset based on the provided schema definition or data structure.
 
-Target Format: [DATA_FORMAT] (JSON, SQL, CSV, FactoryBoy, Faker)
-Record Count: [RECORD_COUNT]
+Target Language: [LANGUAGE]
 
-Schema / Interface Definition:
+Input Code:
+```[LANGUAGE]
+[CODE_BLOCK]
 ```
-[SCHEMA_DEFINITION]
-```
 
-Output the generated dataset adhering to the required format with varied edge-case data entries.
+Output Format:
+Provide the synthetic dataset in a fenced code block with diverse, realistic records satisfying all constraints and relational dependencies.

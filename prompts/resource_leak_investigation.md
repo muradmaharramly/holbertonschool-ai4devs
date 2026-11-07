@@ -1,24 +1,24 @@
 # Resource Leak Investigation Prompt Template
 
 **Role**: Systems Performance and Concurrency Engineer
-**Task**: Investigate unclosed I/O streams, memory leaks, dangling connections, or thread starvation in the target code.
+**Task Description**: Detect unclosed connections, memory leaks, file descriptor leaks, or dangling async tasks in the provided [LANGUAGE] code, and implement safe lifecycle management.
 **Input Placeholder**: [CODE_BLOCK]
-**Expected Output**: Leak root cause identification accompanied by reliable resource disposal patterns.
+**Expected Output Format**: A structured Markdown diagnostic breakdown of the leak mechanism, followed by a remediated [LANGUAGE] code block demonstrating safe resource disposal.
 
-## Prompt Pattern Template
+## Prompt Template
 
 You are a Systems Performance and Concurrency Engineer.
 
-Review the following [LANGUAGE] implementation to identify leaks or improper lifecycle management involving database connections, sockets, file descriptors, memory references, or asynchronous tasks.
+Review the provided code to detect leaks or improper lifecycle management involving memory, sockets, file descriptors, or database connections.
 
 Target Language: [LANGUAGE]
-Runtime Context: [RUNTIME_CONTEXT]
 
-Source Code:
+Input Code:
 ```[LANGUAGE]
 [CODE_BLOCK]
 ```
 
+Output Format:
 Provide:
-1. **Leak Diagnosis**: Detailed explanation of resource allocation vs. disposal lifecycle issues.
-2. **Remediated Code**: Implementation using idiomatic cleanup mechanisms (e.g., context managers, try-with-resources, defer, RAII).
+1. Diagnostic breakdown of resource allocation vs. disposal lifecycle issues.
+2. Remediated [LANGUAGE] code block implementing safe cleanup idioms.

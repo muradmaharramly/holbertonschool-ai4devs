@@ -1,23 +1,22 @@
-# Syntax and Feature Upgrade Prompt Template
+# Syntax Upgrade Prompt Template
 
 **Role**: Language Migration and Modernization Specialist
-**Task**: Upgrade legacy source code to modern syntax, standard libraries, and language paradigms.
+**Task Description**: Upgrade legacy [LANGUAGE] source code to modern syntax, idioms, and standard library conventions while preserving existing behavior.
 **Input Placeholder**: [CODE_BLOCK]
-**Expected Output**: Modernized code utilizing target version features.
+**Expected Output Format**: A Markdown code block in [LANGUAGE] containing the modernized code, followed by a bulleted summary of modern language features utilized.
 
-## Prompt Pattern Template
+## Prompt Template
 
 You are a Language Modernization Specialist.
 
-Upgrade the provided legacy [LANGUAGE] code to target version [TARGET_VERSION]. Replace deprecated functions, obsolete constructs, and verbose boilerplate with modern language idioms (e.g., pattern matching, records, async/await, modern type hints).
+Upgrade the provided legacy code block to modern language syntax and contemporary idioms.
 
-Language: [LANGUAGE]
-Current Version: [SOURCE_VERSION]
-Target Version: [TARGET_VERSION]
+Target Language: [LANGUAGE]
 
-Source Code:
+Input Code:
 ```[LANGUAGE]
 [CODE_BLOCK]
 ```
 
-Provide the modernized code followed by a summary of language features adopted.
+Output Format:
+Provide the modernized [LANGUAGE] code in a fenced code block followed by a bulleted summary of language features adopted.

@@ -29,15 +29,15 @@
   - **Output**: Diagnosis of leak sources + safe resource cleanup pattern
 
 ## Documentation
-- **API and Docstring Generation**
+- **API Docstring Generation**
   - **Goal**: Produce standardized docstrings and API documentation
   - **Input**: Function, class, or public interface in [LANGUAGE]
   - **Output**: Complete documentation block following conventions like JSDoc, Sphinx, or Docstrings
 - **Architecture Overview**
   - **Goal**: Provide high-level technical documentation for a component or service
-  - **Input**: Directory structure, schema definitions, and key interfaces in [LANGUAGE/FRAMEWORK]
+  - **Input**: Directory structure, schema definitions, and key interfaces in [LANGUAGE]
   - **Output**: Structured technical overview detailing responsibilities, dependencies, and data flow
-- **Changelog and Release Notes Generation**
+- **Changelog Generation**
   - **Goal**: Translate raw commits and code differences into clear, user-facing release notes
   - **Input**: Git commit logs or unified diff between versions
   - **Output**: Markdown-formatted changelog grouped by Features, Fixes, and Breaking Changes
@@ -49,7 +49,7 @@
   - **Output**: Executable unit test suite with mock definitions and assertions
 - **Mock Data Generation**
   - **Goal**: Generate realistic mock datasets and fixture objects for testing
-  - **Input**: Data schema, interface definition, or sample object in [FORMAT/LANGUAGE]
+  - **Input**: Data schema, interface definition, or sample object in [LANGUAGE]
   - **Output**: Valid synthetic dataset matching schema constraints in JSON or fixture format
 - **Regression Test Synthesis**
   - **Goal**: Create automated tests reproducing an identified bug before applying a fix
@@ -61,17 +61,17 @@
   - **Goal**: Identify common security vulnerabilities like injection flaws, SSRF, or insecure deserialization
   - **Input**: Controller, route handler, or query logic in [LANGUAGE]
   - **Output**: Vulnerability audit summary + hardened code implementation
-- **Input Sanitization and Validation**
+- **Input Validation**
   - **Goal**: Implement defensive validation and sanitization for external user input
   - **Input**: Data transfer object or request payload schema in [LANGUAGE]
   - **Output**: Validation schema and sanitization routines
-- **Secret Detection and Remediation**
+- **Secret Detection**
   - **Goal**: Detect hardcoded API keys, passwords, or tokens and replace them with secure abstractions
   - **Input**: Configuration files or codebase extract
   - **Output**: Sanitized code + configuration using environment variables or secret manager patterns
 
 ## Code Modernization
-- **Syntax and Feature Upgrade**
+- **Syntax Upgrade**
   - **Goal**: Upgrade legacy language syntax to modern language versions and standards
   - **Input**: Legacy code snippet in [LANGUAGE] and target version [TARGET_VERSION]
   - **Output**: Refactored code utilizing modern language constructs

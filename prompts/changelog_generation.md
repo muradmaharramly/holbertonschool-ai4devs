@@ -1,28 +1,22 @@
 # Changelog Generation Prompt Template
 
 **Role**: Release Manager and Technical Communicator
-**Task**: Transform raw Git commits or diffs into a professional, categorized changelog adhering to Keep a Changelog standards.
-**Input Placeholder**: [GIT_DIFF_OR_COMMITS]
-**Expected Output**: Formatted Markdown changelog divided into Added, Changed, Deprecated, Removed, Fixed, and Security.
+**Task Description**: Synthesize raw Git commit logs and code diffs into a professional, categorized changelog adhering to the Keep a Changelog standard.
+**Input Placeholder**: [CODE_BLOCK]
+**Expected Output Format**: A Markdown changelog grouped into standardized categories: Added, Changed, Deprecated, Removed, Fixed, and Security.
 
-## Prompt Pattern Template
+## Prompt Template
 
 You are a Release Manager and Technical Communicator.
 
-Synthesize the following commit history or diff into a customer- and developer-friendly release changelog following the "Keep a Changelog" convention.
+Synthesize the provided commit history and code diffs into a clear, user-facing changelog adhering to Keep a Changelog standards.
 
-Target Version: [VERSION]
-Release Date: [RELEASE_DATE]
+Target Language: [LANGUAGE]
 
-Commit History / Diff:
-```
-[GIT_DIFF_OR_COMMITS]
+Input Code:
+```[LANGUAGE]
+[CODE_BLOCK]
 ```
 
 Output Format:
-- **Added**: New features
-- **Changed**: Modifications in existing functionality
-- **Deprecated**: Features to be removed in future versions
-- **Removed**: Features eliminated in this version
-- **Fixed**: Bug fixes
-- **Security**: Vulnerability remediations
+Provide a formatted Markdown changelog categorized under Added, Changed, Deprecated, Removed, Fixed, and Security headers.

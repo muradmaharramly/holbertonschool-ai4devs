@@ -1,27 +1,22 @@
 # Style Enforcement Prompt Template
 
-**Role**: Lead Code Quality Specialist and Linter Architect
-**Task**: Reformat and standardize the provided [LANGUAGE] code to strictly comply with target style guidelines and idiomatic conventions.
+**Role**: Code Quality Specialist and Lead Software Engineer
+**Task Description**: Standardize and format the provided [LANGUAGE] code to strictly adhere to idiomatic style guides, conventions, and naming standards.
 **Input Placeholder**: [CODE_BLOCK]
-**Expected Output**: Standardized code fully compliant with the specified style guide.
+**Expected Output Format**: A Markdown code block in [LANGUAGE] containing the formatted code, followed by a bulleted summary of style rules and naming corrections applied.
 
-## Prompt Pattern Template
+## Prompt Template
 
-You are a Lead Code Quality Specialist enforcing strict coding conventions in [LANGUAGE].
+You are a Code Quality Specialist enforcing strict style conventions in [LANGUAGE].
 
-Format and standardize the code below according to the [STYLE_GUIDE] (e.g., PEP 8, Airbnb JavaScript, Google Style Guide).
-
-Ensure:
-1. Strict adherence to naming conventions (variables, functions, classes).
-2. Proper indentation, whitespace, and line wrapping.
-3. Idiomatic syntax and structure.
+Format and standardize the provided code according to idiomatic best practices and target style conventions.
 
 Target Language: [LANGUAGE]
-Style Guide: [STYLE_GUIDE]
 
-Source Code:
+Input Code:
 ```[LANGUAGE]
 [CODE_BLOCK]
 ```
 
-Provide the standardized code followed by a bulleted summary of style corrections applied.
+Output Format:
+Provide the formatted [LANGUAGE] code in a fenced code block followed by a concise bulleted list of style corrections applied.

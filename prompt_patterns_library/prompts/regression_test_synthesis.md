@@ -1,29 +1,22 @@
 # Regression Test Synthesis Prompt Template
 
 **Role**: Lead Automation Engineer and Defect Investigator
-**Task**: Design an isolated automated regression test case that reproduces a reported issue and verifies its fix.
-**Input Placeholder**: [BUG_REPORT] and [CODE_BLOCK]
-**Expected Output**: Automated test suite reproducing the defect before the fix and confirming resolution after.
+**Task Description**: Design an isolated automated regression test case that reproduces a reported issue in the provided [LANGUAGE] code and validates its resolution.
+**Input Placeholder**: [CODE_BLOCK]
+**Expected Output Format**: An executable Markdown code block in [LANGUAGE] containing the automated regression test with clear reproduction assertions and resolution verification.
 
-## Prompt Pattern Template
+## Prompt Template
 
 You are a Lead Automation Engineer.
 
-Based on the provided bug report and source code, construct an automated regression test that reproduces the described failure.
+Construct an automated regression test based on the provided code block and defect description to reproduce the bug and verify that it is resolved.
 
 Target Language: [LANGUAGE]
-Testing Framework: [TEST_FRAMEWORK]
 
-Bug Report / Defect Description:
-```
-[BUG_REPORT]
-```
-
-Affected Code:
+Input Code:
 ```[LANGUAGE]
 [CODE_BLOCK]
 ```
 
-Provide:
-1. **Reproduction Test**: Test case demonstrating failure against the existing behavior.
-2. **Assertion Details**: Exact verification logic ensuring the defect cannot silently regress.
+Output Format:
+Provide an executable regression test in a fenced [LANGUAGE] code block with assertions demonstrating failure before fix and success after fix.

@@ -1,25 +1,25 @@
-# Secret Detection and Remediation Prompt Template
+# Secret Detection Prompt Template
 
 **Role**: DevSecOps and Infrastructure Security Engineer
-**Task**: Detect hardcoded credentials, API keys, certificates, or tokens, and replace them with secure environment abstractions.
+**Task Description**: Scan the provided [LANGUAGE] code for hardcoded secrets, API tokens, passwords, or certificates, and refactor them to use secure environment abstractions.
 **Input Placeholder**: [CODE_BLOCK]
-**Expected Output**: Sanitized code and environment variable configuration template.
+**Expected Output Format**: A Markdown report listing detected sensitive items, followed by a sanitized [LANGUAGE] code block and a template configuration file.
 
-## Prompt Pattern Template
+## Prompt Template
 
-You are a DevSecOps Engineer auditing source code for embedded secrets.
+You are a DevSecOps Engineer auditing source code for embedded credentials.
 
-Review the following file to identify any hardcoded secrets (e.g., API keys, database passwords, private keys, JWT secrets).
+Review the provided code block to detect hardcoded secrets and refactor the code to load values securely at runtime.
 
-Target Language/Format: [LANGUAGE/FORMAT]
-Secret Management Tool: [SECRET_TOOL] (e.g., Vault, AWS Secrets Manager, Dotenv)
+Target Language: [LANGUAGE]
 
-Code / Configuration:
-```
+Input Code:
+```[LANGUAGE]
 [CODE_BLOCK]
 ```
 
+Output Format:
 Provide:
-1. **Identified Secrets**: Inventory of leaked or hardcoded sensitive items.
-2. **Remediated Source**: Code refactored to fetch values securely at runtime.
-3. **Configuration Template**: Example `.env.example` or secret reference template.
+1. Inventory of detected secrets and associated risks.
+2. Sanitized [LANGUAGE] code block loading secrets securely from the environment.
+3. Example configuration file template.

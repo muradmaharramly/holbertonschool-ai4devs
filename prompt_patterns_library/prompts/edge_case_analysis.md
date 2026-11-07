@@ -1,24 +1,24 @@
 # Edge Case Analysis Prompt Template
 
 **Role**: Software Reliability Engineer and Quality Analyst
-**Task**: Identify unhandled edge cases, boundary condition failures, and unusual input scenarios for a given function.
+**Task Description**: Identify unhandled edge cases, boundary conditions, and unexpected input states in the provided [LANGUAGE] code, and provide defensive fixes.
 **Input Placeholder**: [CODE_BLOCK]
-**Expected Output**: Comprehensive matrix of boundary cases and defensive code hardening patches.
+**Expected Output Format**: A Markdown table of edge case scenarios (trigger input, failure mode, impact) followed by a hardened [LANGUAGE] code block.
 
-## Prompt Pattern Template
+## Prompt Template
 
-You are a Senior Software Reliability Engineer specializing in robustness and fault tolerance.
+You are a Software Reliability Engineer specializing in robustness and fault tolerance.
 
-Evaluate the following [LANGUAGE] function to identify edge cases, boundary conditions, and unexpected input states that may cause failure (e.g., null values, empty collections, integer overflow, concurrency race conditions).
+Evaluate the provided [LANGUAGE] code to identify unhandled edge cases, boundary condition failures, and unusual input scenarios.
 
 Target Language: [LANGUAGE]
-Function Specification: [SPECIFICATION]
 
-Source Code:
+Input Code:
 ```[LANGUAGE]
 [CODE_BLOCK]
 ```
 
+Output Format:
 Provide:
-1. **Edge Case Matrix**: Table of edge conditions, trigger inputs, and expected failure modes.
-2. **Defensive Implementation**: Hardened code implementation handling all identified edge cases.
+1. A Markdown table summarizing edge cases (Scenario, Input Trigger, Expected Behavior).
+2. A hardened [LANGUAGE] code block implementing defensive handling for all identified edge cases.

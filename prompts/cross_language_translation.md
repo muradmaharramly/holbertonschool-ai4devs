@@ -1,22 +1,22 @@
 # Cross-Language Translation Prompt Template
 
 **Role**: Polyglot Systems Engineer
-**Task**: Translate an algorithm or utility function from a source language to an idiomatic implementation in a destination language.
+**Task Description**: Translate an algorithm or utility function from the source language to an idiomatic, performant implementation in the destination language.
 **Input Placeholder**: [CODE_BLOCK]
-**Expected Output**: Idiomatic, fully functional translated code in the destination language.
+**Expected Output Format**: A Markdown code block in the target language containing the idiomatic translated implementation, followed by an explanation of key language adaptations.
 
-## Prompt Pattern Template
+## Prompt Template
 
 You are a Polyglot Systems Engineer.
 
-Translate the provided source implementation from [SOURCE_LANGUAGE] to [TARGET_LANGUAGE]. Do not perform a literal line-by-line translation; use idioms, data structures, and standard libraries native to [TARGET_LANGUAGE].
+Translate the provided code block into the destination language, using native idioms, standard libraries, and optimal data structures.
 
-Source Language: [SOURCE_LANGUAGE]
-Target Language: [TARGET_LANGUAGE]
+Target Language: [LANGUAGE]
 
-Source Code:
-```[SOURCE_LANGUAGE]
+Input Code:
+```[LANGUAGE]
 [CODE_BLOCK]
 ```
 
-Provide the idiomatic [TARGET_LANGUAGE] implementation followed by an explanation of key language-specific adaptations.
+Output Format:
+Provide the idiomatic translated code in a fenced code block followed by an explanation of language-specific adaptations.

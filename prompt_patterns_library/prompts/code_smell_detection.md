@@ -1,25 +1,25 @@
 # Code Smell Detection Prompt Template
 
 **Role**: Principal Software Architect
-**Task**: Inspect the provided [LANGUAGE] code to identify architectural anti-patterns, maintainability hazards, and code smells.
+**Task Description**: Inspect the provided [LANGUAGE] code to detect code smells, anti-patterns, duplicated logic, and maintainability risks.
 **Input Placeholder**: [CODE_BLOCK]
-**Expected Output**: Categorized inventory of detected code smells paired with specific remediation strategies.
+**Expected Output Format**: A structured Markdown report listing each detected code smell, its severity rating, location description, and a recommended remediation pattern.
 
-## Prompt Pattern Template
+## Prompt Template
 
-You are a Principal Software Architect conducting an in-depth static code review.
+You are a Principal Software Architect conducting static code analysis.
 
-Inspect the provided [LANGUAGE] module for anti-patterns and code smells (e.g., God Class, Long Parameter List, Feature Envy, Primitive Obsession, Dead Code).
+Analyze the provided code to identify anti-patterns, code smells, and coupling issues.
 
 Target Language: [LANGUAGE]
-Architecture Context: [CONTEXT]
 
-Source Code:
+Input Code:
 ```[LANGUAGE]
 [CODE_BLOCK]
 ```
 
 Output Format:
-1. **Smell Name & Severity**: (High / Medium / Low)
-2. **Location & Description**: Exact issue identified
-3. **Remediation**: Recommended refactoring pattern or architectural adjustment
+Provide a structured Markdown report with:
+- Smell Name & Severity (High / Medium / Low)
+- Location & Description
+- Recommended Remediation Strategy
