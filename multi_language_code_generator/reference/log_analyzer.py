@@ -103,7 +103,7 @@ class LogAnalyzer:
             body_bytes=body_bytes,
         )
 
-    def analyze_stream(self, lines: Iterable[str]) -> dict[str, Any]:
+    def analyze(self, lines: Iterable[str]) -> dict[str, Any]:
         """Aggregate log metrics over an iterable of lines in O(N) streaming time."""
         total_requests = 0
         malformed_lines = 0
@@ -165,7 +165,7 @@ class LogAnalyzer:
         """Stream and analyze a UTF-8 log file line-by-line (replacing invalid UTF-8 bytes)."""
         path = Path(file_path)
         with path.open("r", encoding="utf-8", errors="replace", newline="\n") as handle:
-            return self.analyze_stream(handle)
+            return self.analyze(handle)
 
 
 def main(argv: list[str] | None = None) -> int:

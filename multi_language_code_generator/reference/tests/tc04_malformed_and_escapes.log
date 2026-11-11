@@ -1,0 +1,9 @@
+203.0.113.1 - - [10/Nov/2026:11:15:30 -0500] "OPTIONS * HTTP/1.1" 200 0 "-" "Custom \"Agent\" v1"
+203.0.113.2 - - [10/Nov/2026:11:15:31 +0400] "GET /ws HTTP/1.1" 101 0 "-" "WebSocketClient/2.0"
+203.0.113.1 - - [99/Nov/2026:11:15:32 +0000] "GET /bad-day HTTP/1.1" 200 100 "-" "curl/8.5.0"
+203.0.113.1 - - [10/Nov/2026:25:15:32 +0000] "GET /bad-hour HTTP/1.1" 200 100 "-" "curl/8.5.0"
+203.0.113.1 - - [10/Nov/2026:11:15:33 +0000] "get /lowercase HTTP/1.1" 200 100 "-" "curl/8.5.0"
+203.0.113.1 - - [10/Nov/2026:11:15:34 +0000] "GET /bad-status HTTP/1.1" 600 100 "-" "curl/8.5.0"
+203.0.113.1 - - [10/Nov/2026:11:15:35 +0000] "GET /neg-bytes HTTP/1.1" 200 -10 "-" "curl/8.5.0"
+203.0.113.1 - - [10/Nov/2026:11:15:36 +0000] "GET /unclosed HTTP/1.1" 200 100 "-" "unclosed
+completely malformed garbage line
