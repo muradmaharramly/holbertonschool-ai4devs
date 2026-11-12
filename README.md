@@ -12,3 +12,4 @@ This repository contains projects and practical exercises developed for the Holb
 | [`ai_specification_writer`](./ai_specification_writer) | Structured product and technical specification package for CarpoolConnect, created through AI-assisted specification workflows. |
 | [`copilot_productivity_sprint`](./copilot_productivity_sprint) | Controlled manual vs. GitHub Copilot coding productivity sprint, environment setup, metrics, and reflection. |
 | [`ai_powered_startup_mvp_builder`](./ai_powered_startup_mvp_builder) | Lean startup MVP sprint simulating end-to-end MVP specification, architecture, implementation, and deployment with AI assistance. |
+| [`ai_code_review_simulator`](./ai_code_review_simulator) | Pull request simulation, task filtering feature, AI code review workflows, and comparative evaluation. |
