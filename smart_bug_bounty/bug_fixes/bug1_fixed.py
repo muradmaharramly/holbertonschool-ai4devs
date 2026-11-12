@@ -13,5 +13,11 @@ if __name__ == "__main__":
         {"id": 104, "action": "export_data"},
         {"id": 105, "action": "logout"}
     ]
-    latest = fetch_latest_events(audit_log, 3)
-    print(f"Expected 3 events, got: {len(latest)}")
+    t1 = fetch_latest_events(audit_log, 3)
+    print(f"Test 1 (Standard): {'PASS' if len(t1) == 3 and t1[-1]['id'] == 105 else 'FAIL'}")
+
+    t2 = fetch_latest_events(audit_log, 0)
+    print(f"Test 2 (Zero Limit): {'PASS' if t2 == [] else 'FAIL'}")
+
+    t3 = fetch_latest_events(audit_log, 10)
+    print(f"Test 3 (Exceeding Limit): {'PASS' if len(t3) == 5 else 'FAIL'}")

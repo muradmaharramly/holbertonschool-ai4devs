@@ -3,6 +3,9 @@
 #include <stdlib.h>
 
 char *format_user_tag(const char *username, int id) {
+    if (!username) {
+        return NULL;
+    }
     char id_str[12];
     snprintf(id_str, sizeof(id_str), "#%04d", id);
     
@@ -18,10 +21,17 @@ char *format_user_tag(const char *username, int id) {
 }
 
 int main(void) {
-    char *tag = format_user_tag("developer", 42);
-    if (tag) {
-        printf("Tag: %s\n", tag);
-        free(tag);
-    }
+    char *t1 = format_user_tag("developer", 42);
+    printf("Test 1 (Standard Tag): %s\n", (t1 && strcmp(t1, "developer#0042") == 0) ? "PASS" : "FAIL");
+    free(t1);
+
+    char *t2 = format_user_tag("", 1);
+    printf("Test 2 (Empty Username): %s\n", (t2 && strcmp(t2, "#0001") == 0) ? "PASS" : "FAIL");
+    free(t2);
+
+    char *t3 = format_user_tag("admin", 9999);
+    printf("Test 3 (Large ID): %s\n", (t3 && strcmp(t3, "admin#9999") == 0) ? "PASS" : "FAIL");
+    free(t3);
+
     return 0;
 }

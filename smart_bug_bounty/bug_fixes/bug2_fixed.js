@@ -21,6 +21,13 @@ function mergeConfig(target, source) {
 const baseConfig = { env: "production", retries: 3 };
 const userPayload = JSON.parse('{"__proto__": {"isAdmin": true}}');
 mergeConfig(baseConfig, userPayload);
-
 const guestUser = {};
-console.log("Is guest admin:", Boolean(guestUser.isAdmin));
+console.log("Test 1 (Prototype Pollution Prevention):", !guestUser.isAdmin ? "PASS" : "FAIL");
+
+const nestedTarget = {};
+mergeConfig(nestedTarget, { server: { port: 8080 } });
+console.log("Test 2 (Nested Merge):", nestedTarget.server && nestedTarget.server.port === 8080 ? "PASS" : "FAIL");
+
+const safeTarget = { a: 1 };
+mergeConfig(safeTarget, null);
+console.log("Test 3 (Null Source):", safeTarget.a === 1 ? "PASS" : "FAIL");

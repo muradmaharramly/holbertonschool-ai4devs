@@ -13,7 +13,13 @@ if __name__ == "__main__":
     cursor.execute("INSERT INTO users VALUES (2, 'admin', 'administrator')")
     conn.commit()
 
-    payload = "guest' OR role = 'administrator"
-    res = find_user_by_username(cursor, payload)
-    print("User retrieved:", res)
+    t1 = find_user_by_username(cursor, "admin")
+    print(f"Test 1 (Legitimate Query): {'PASS' if t1 and t1[1] == 'admin' else 'FAIL'}")
+
+    t2 = find_user_by_username(cursor, "guest' OR role = 'administrator")
+    print(f"Test 2 (SQL Injection Blocked): {'PASS' if t2 is None else 'FAIL'}")
+
+    t3 = find_user_by_username(cursor, "unknown_user")
+    print(f"Test 3 (Nonexistent User): {'PASS' if t3 is None else 'FAIL'}")
+
     conn.close()
