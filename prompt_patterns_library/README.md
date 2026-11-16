@@ -74,3 +74,8 @@ Each template is designed with modular placeholders for seamless integration int
 2. **Populate Placeholders**: Replace isolated variables such as `[LANGUAGE]`, `[CODE_BLOCK]`, or `[FRAMEWORK]` with target context.
 3. **Execute against Assistant**: Supply the populated prompt to your AI assistant (e.g., Claude, Gemini, ChatGPT, GitHub Copilot).
 4. **Evaluate Quality**: Compare generated output against the structured expectations and validation criteria documented in [`prompt_examples.md`](./prompts/prompt_examples.md).
+
+---
+
+## Engineering Reflection
+For an in-depth analysis of prompt pattern ergonomics, ease of generalization, and structural influence on AI outputs, see [`reflection.md`](./reflection.md).
