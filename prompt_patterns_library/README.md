@@ -5,6 +5,7 @@ A categorized library of reusable prompt patterns and structured use cases desig
 
 ## Contents
 - [`prompt_use_cases.md`](./prompt_use_cases.md): Categorized collection of recurring AI-assisted development use cases with goals, inputs, and outputs.
+- [`prompts/prompt_examples.md`](./prompts/prompt_examples.md): Empirical test examples, AI outputs, and quality assessments across core prompt templates.
 - [`prompts/`](./prompts/): Reusable prompt templates featuring defined roles, task descriptions, input placeholders, and expected output formats.
   - [`refactoring.md`](./prompts/refactoring.md): Code refactoring and complexity optimization.
   - [`style_enforcement.md`](./prompts/style_enforcement.md): Coding style and formatting enforcement.
